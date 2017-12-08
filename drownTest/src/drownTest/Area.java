@@ -1,7 +1,7 @@
 package drownTest;
 
 import java.util.Random;
-
+//// 2 commit
 public  class Area {
 	Random rand = new Random();
 	public static MathVector center ;
