@@ -8,11 +8,14 @@ public class Main {
 	static Area area;
 	public static void main(String[] args){
 		
-		drone DRONE = new drone();
-		for(int i=0;i<100;i++)
-		{
-			DRONE.MoveDrown();
-			DRONE.v.PrintVector();
-		}
+		drownProcess DRONE = new drownProcess();
+		DRONE.drownId=1;
+		new Thread(DRONE.DrawnTheard).start();
+		drownProcess DRONE1 = new drownProcess();
+		DRONE1.drownId=2;
+		new Thread(DRONE1.DrawnTheard).start();;
+		//for(int i=0;i<5;i++);
+		//DRONE.DrawnTheard.stopDrawn();
+		//DRONE.DrawnTheard.stopDrawn();
 	}
 }
