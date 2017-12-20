@@ -16,7 +16,7 @@ public class moveDrawnTheard implements Runnable {
 		vflock=vflock1;
 		v=v1;
 		area=area1;
-		CanRun=true;
+		CanRun=run1;
 	}
 	public MathVector vshill()
 	{
@@ -47,7 +47,7 @@ public class moveDrawnTheard implements Runnable {
 	}
 	public void stopDrawn()
 	{
-		CanRun=false;
+		processDrown.run=false;
 	}
 	public void MoveDrown()
 	{
@@ -60,11 +60,9 @@ public class moveDrawnTheard implements Runnable {
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-		while(CanRun)
+		while(processDrown.run)
 		{
-			for(int i=0;i<5;i++)
 				System.out.println("Theard Number: " + processDrown.drownId + " is in cordinate: ");
-			stopDrawn();
 		}
 	}
 

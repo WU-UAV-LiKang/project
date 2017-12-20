@@ -13,9 +13,9 @@ public class Main {
 		new Thread(DRONE.DrawnTheard).start();
 		drownProcess DRONE1 = new drownProcess();
 		DRONE1.drownId=2;
-		new Thread(DRONE1.DrawnTheard).start();;
-		//for(int i=0;i<5;i++);
-		//DRONE.DrawnTheard.stopDrawn();
-		//DRONE.DrawnTheard.stopDrawn();
+		new Thread(DRONE1.DrawnTheard).start();
+		DRONE.run=true;
+		for(int i=0;i<100000;i++);
+		DRONE.run=false;
 	}
 }

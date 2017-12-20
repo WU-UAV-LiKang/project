@@ -14,7 +14,7 @@ public class drownProcess extends Process{
 	MathVector vflock;
 	MathVector v;
 	Area area;
-	private boolean run;
+	static boolean run;
 	moveDrawnTheard DrawnTheard;
 	public drownProcess()
 	{
@@ -25,7 +25,6 @@ public class drownProcess extends Process{
 				cordinate = new MathVector(10000.0,10000.0,10000.0);
 				//this.v=vflock;
 				area = new Area(20,6,200);
-				run=true;
 				DrawnTheard = new moveDrawnTheard(cordinate, vflock, v, area, this, run);
 	}
 	
